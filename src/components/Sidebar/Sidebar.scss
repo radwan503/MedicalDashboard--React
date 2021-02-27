@@ -1,0 +1,62 @@
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    background: #005086;
+    color: #fff;
+    transition: all 0.3s;
+    height: 100%;
+    overflow: auto;
+    position: fixed;
+    z-index: 1;
+    .sidebar--header {
+      padding: 20px;
+      background: #005086;
+    }
+    ul.sidebar--menu {
+      padding: 20px 0px;
+      border-bottom: 1px solid #47748b;
+  
+      li {
+          //padding-left: 10px;
+          //background-color: red;
+        a {
+          //padding: 15px 0px;
+          font-size: 1.1em;
+          display: block;
+         
+        }
+        
+        &:hover {
+          color: #fff;
+          background: #222;
+          transition: all 0.3s ease;
+        }
+        .sidebar__submenu{
+            li{
+              padding-left: 20px;
+              background-color: burlywood;
+              a {
+                  padding: 15px 0px;
+                  font-size: 1.1em;
+                  display: block;
+                 
+              }
+              &:hover {
+                  color: #fff;
+                  background: red;
+                  transition: all 0.3s ease;
+                  
+                }
+            }
+        }
+      }
+   
+    }
+  }
+
+  .menu__item{
+      padding: 15px 10px !important;
+      width: 100%;
+      text-align: left;
+      text-decoration: none;
+    }
