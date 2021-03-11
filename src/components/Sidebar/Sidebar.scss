@@ -1,62 +1,154 @@
 #sidebar {
-    min-width: 250px;
-    max-width: 250px;
-    background: #005086;
-    color: #fff;
-    transition: all 0.3s;
-    height: 100%;
-    overflow: auto;
-    position: fixed;
-    z-index: 1;
-    .sidebar--header {
-      padding: 20px;
-      background: #005086;
-    }
-    ul.sidebar--menu {
-      padding: 20px 0px;
-      border-bottom: 1px solid #47748b;
-  
-      li {
-          //padding-left: 10px;
-          //background-color: red;
-        a {
-          //padding: 15px 0px;
-          font-size: 1.1em;
-          display: block;
-         
-        }
-        
-        &:hover {
-          color: #fff;
-          background: #222;
-          transition: all 0.3s ease;
-        }
-        .sidebar__submenu{
-            li{
-              padding-left: 20px;
-              background-color: burlywood;
-              a {
-                  padding: 15px 0px;
-                  font-size: 1.1em;
-                  display: block;
-                 
-              }
-              &:hover {
-                  color: #fff;
-                  background: red;
-                  transition: all 0.3s ease;
-                  
-                }
-            }
-        }
+  min-width: 250px;
+  max-width: 250px;
+  background: #fff;
+  color: #fff;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  height: 100%;
+  overflow: auto;
+  position: fixed;
+  z-index: 1;
+  box-shadow: 0px 0px 5px rgba(0,0,0,.75);
+  -webkit-box-shadow:0px 0px 5px rgba(0,0,0,.75);
+  --moz-box-shadow:0px 0px 5px rgba(0,0,0,.75);
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+/* Handle */
+&::-webkit-scrollbar-thumb {
+  background: rgba(151, 146, 146,.4); 
+}
+
+/* Handle on hover */
+&::-webkit-scrollbar-thumb:hover {
+  background: rgba(151, 146, 146,.4); 
+}
+  .sidebar--header {
+    width: 100%;
+    padding: 20px;
+    background: #fff;
+    position: relative;
+    display: inline-flex;
+    justify-content: left;
+    .siderbar-header__logo{
+        max-height: 70px;
+        max-width: 70px;
+      .sidebar--logo__icon{
+         height: 100%;
+         width: 100%;
       }
-   
+    }
+    .siderbar--logo_title{
+      margin-top: 15px;
+      h3{
+        font-size: 30px;
+        text-transform: uppercase;
+        font-weight: bold;
+        
+      }
     }
   }
-
-  .menu__item{
-      padding: 15px 10px !important;
-      width: 100%;
-      text-align: left;
-      text-decoration: none;
+  ul.sidebar--menu {
+    //padding: 20px 0px;
+    li {
+      a {
+        display: block;
+        color: #333;
+        font-weight: 300;
+        text-transform: capitalize;
+        span{
+          margin-right: 10px;
+        }
+       
+      }
+      
+      &:hover {
+        color: #fff;
+        background: #222;
+        -webkit-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+      }
+      .sidebar__submenu{
+          li{
+            padding-left: 20px;
+            background-color: rgba(206, 218, 248, 0.925);
+            a {
+                padding: 15px 0px;
+                font-size: 1.1em;
+                display: block;
+               
+            }
+            &:hover {
+                color: #fff;
+                background:rgba(195, 211, 255, 0.925);
+                -webkit-transition: all 0.3s ease;
+                -o-transition: all 0.3s ease;
+                transition: all 0.3s ease;
+                
+              }
+          }
+      }
     }
+ 
+  }
+}
+
+.menu__item{
+    padding: 15px 10px !important;
+    width: 100%;
+    text-align: left;
+    text-decoration: none;
+    color: #333;
+    font-weight: 300;
+    text-transform: capitalize;
+    span{
+      margin-right: 10px;
+      font-size: 20px;
+    }
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .sidebar--header {
+    width: 85%;
+    padding: 20px;
+    background: #fff;
+    position: relative;
+    display: inline-flex;
+    justify-content: left;
+    .siderbar-header__logo{
+      width: 40px !important;
+      height: 40px !important;
+      margin-top: 12px;
+      .sidebar--logo__icon{
+         height: 100%;
+         width: 100%;
+      }
+    }
+    .siderbar--logo_title{
+      margin-top: 15px;
+      h3{
+        font-size: 25px !important;
+        text-transform: uppercase;
+        font-weight: bold;
+        
+      }
+    }
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

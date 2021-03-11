@@ -1,0 +1,54 @@
+.sider-bar--small-device {
+  position: relative;
+  .siderbar__show__hide {
+    position: absolute;
+    left: 190px;
+    right: 0;
+    top: 33px;
+    z-index: 999;
+    height: 35px;
+    width: 35px;
+    transition: all 0.5s ease;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    border: 0;
+    background-color: #222;
+  }
+}
+
+.navbar-nav .nav-item .dropdown-menu:after {
+  border-bottom: 11px solid #ffffff;
+  border-left: 11px solid rgba(0, 0, 0, 0);
+  border-right: 11px solid rgba(0, 0, 0, 0);
+  content: "";
+  display: inline-block;
+  position: absolute;
+  right: 12px;
+  top: -10px;
+}
+
+@media only screen and (max-width: 600px) {
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .toggle-menu-icon {
+    display: none;
+  }
+  .sider-bar--small-device {
+    display: none;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}

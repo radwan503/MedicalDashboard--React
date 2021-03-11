@@ -1,11 +1,8 @@
-import React from 'react'
+import React from "react";
+import { Container } from "react-bootstrap";
 
 const Dashboard = () => {
-    return (
-        <div>
-            dashboard
-        </div>
-    )
-}
+  return <Container>dashboard</Container>;
+};
 
-export default Dashboard
+export default Dashboard;

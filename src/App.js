@@ -12,12 +12,14 @@ function App() {
     <Fragment>
       <div className="wrapper">
         <Router>
-          
+          <div className="side-panel">
+          <Sidebar></Sidebar>
+          </div>
           <div className="main-panel">
             <Header></Header>
             <div className="container-fluid">
               <Switch>
-                <Route path='/dashboard' exact component={Dashboard} />
+                <Route path='/' exact component={Dashboard} />
                 <Route path='/about' exact component={About} />
               </Switch>
             </div>
