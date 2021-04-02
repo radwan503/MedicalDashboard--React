@@ -12,10 +12,10 @@ function App() {
     <Fragment>
       <div className="wrapper">
         <Router>
-          <div className="side-panel">
-          <Sidebar></Sidebar>
-          </div>
-          <div className="main-panel">
+          <aside className="side-panel">
+            <Sidebar></Sidebar>
+          </aside>
+          <main className="main-panel">
             <Header></Header>
             <div className="container-fluid">
               <Switch>
@@ -23,7 +23,7 @@ function App() {
                 <Route path='/about' exact component={About} />
               </Switch>
             </div>
-          </div>
+          </main>
         </Router>
       </div>
     </Fragment>

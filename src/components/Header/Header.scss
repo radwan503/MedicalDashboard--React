@@ -1,3 +1,56 @@
+#vaccine-navbar--top {
+  .navbar-nav .nav-item .dropdown-menu:after {
+    border-bottom: 11px solid #ffffff;
+    border-left: 11px solid rgba(0, 0, 0, 0);
+    border-right: 11px solid rgba(0, 0, 0, 0);
+    content: "";
+    display: inline-block;
+    position: absolute;
+    right: 12px;
+    top: -10px;
+  }
+  .navbar-nav .nav-link {
+    font-size: 18px;
+  }
+  .dropdown-toggle.notification-bell::after {
+    display: inline-block;
+    margin-left: -0.2em;
+    vertical-align: 0.6em;
+    content: "";
+    height: 5px;
+    width: 5px;
+    background-color: #ee6c4d;
+    border-radius: 50%;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 0;
+    border-left: 0;
+  }
+  .dropdown-menu--custom {
+    margin: 8px 0px 0px 0px !important;
+    padding: 0;
+  }
+  
+  .user-profile-dropdown{
+    .profile-dropdown-list{
+      border: 0 !important;
+      .list-group-item.active {
+        color: #fff;
+        background-color: #F28B74;
+        border-color: #F28B74;
+      }
+    }
+    img.user-profile-img{
+      height: 25px;
+      width: 25px;
+      border-radius: 100%;
+    }
+    .dropdown-toggle::after {
+      display: none;
+    }
+  }
+  
+}
 .sider-bar--small-device {
   position: relative;
   .siderbar__show__hide {
@@ -8,7 +61,6 @@
     z-index: 999;
     height: 35px;
     width: 35px;
-    transition: all 0.5s ease;
     display: flex;
     align-items: center;
     color: #fff;
@@ -17,22 +69,21 @@
   }
 }
 
-.navbar-nav .nav-item .dropdown-menu:after {
-  border-bottom: 11px solid #ffffff;
-  border-left: 11px solid rgba(0, 0, 0, 0);
-  border-right: 11px solid rgba(0, 0, 0, 0);
-  content: "";
-  display: inline-block;
-  position: absolute;
-  right: 12px;
-  top: -10px;
-}
-
 @media only screen and (max-width: 600px) {
+  #vaccine-navbar--top {
+    .navbar-nav .nav-item .dropdown-menu:after {
+      display: none;
+    }
+  }  
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+  #vaccine-navbar--top {
+    .navbar-nav .nav-item .dropdown-menu:after {
+      display: none;
+    }
+  }  
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
