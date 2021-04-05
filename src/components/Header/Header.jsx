@@ -39,11 +39,9 @@ const Header = () => {
       )}
       <Navbar
         id="vaccine-navbar--top"
-        className="container"
         bg="light"
         expand="lg"
       >
-        <Container>
           <Navbar.Brand
             className="toggle-menu-icon"
             onClick={() => toggleShow(!show)}
@@ -53,9 +51,7 @@ const Header = () => {
           <Navbar.Toggle aria-controls="vaccine-navbar-nav" />
           <Navbar.Collapse id="vaccine-navbar-nav">
             <Nav className="ml-auto">
-             
-              <Nav.Link href="#home"><MdSettings></MdSettings></Nav.Link>
-
+              <Nav.Link href="#home"><MdSettings></MdSettings><span className="d-block d-sm-none">Setting</span></Nav.Link>
               <Dropdown as={Nav.Item}>
                 <Dropdown.Toggle
                   as={Nav.Link}
@@ -64,8 +60,9 @@ const Header = () => {
                   className="notification-bell"
                   data-toggle="dropdown"
                 >
-                  <FaRegBell />
+                  <FaRegBell /> 
                 </Dropdown.Toggle>
+                <span className="d-block d-sm-none">Notification</span>
                 <Dropdown.Menu className="dropdown-menu-right dropdown-menu--custom">
                   <NotificationComponents></NotificationComponents>
                 </Dropdown.Menu>
@@ -83,6 +80,7 @@ const Header = () => {
                     src={require("../../assets/img/user/admin.jpg").default}
                   ></img>
                 </Dropdown.Toggle>
+                <span className="d-block d-sm-none">Profile</span>
                 <Dropdown.Menu className="dropdown-menu-right profile-dropdown-list dropdown-menu--custom">
                   <ListGroup as="ul">
                     <ListGroup.Item as="li" action href="#Profile">Profile</ListGroup.Item>
@@ -94,7 +92,6 @@ const Header = () => {
               </Dropdown>
             </Nav>
           </Navbar.Collapse>
-        </Container>
       </Navbar>
     </Fragment>
   );

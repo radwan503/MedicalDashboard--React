@@ -47,6 +47,12 @@
             border: 0;
             border-radius: 5px;
             margin: 15px 0px;
+            .card-content{
+                width: 100%;
+            }
+            .apexcharts-toolbar{
+                display: none !important;
+            }
         }
     }
 }

@@ -3,7 +3,8 @@ import axios from 'axios';
 import { Breadcrumb, Card, Container } from "react-bootstrap";
 import { FaHome,FaFileAlt } from "react-icons/fa";
 import dataTo from '../../data/survey-data.json';
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import vaccinate from '../../data/vaccinated-data.json';
+import ReactApexChart from "react-apexcharts";
 import './Dashboard.scss';
 
 
@@ -12,7 +13,7 @@ const Dashboard = () => {
   return (
   <Fragment>
     <div id="content-dashboard">
-      <Container>
+      <div className="container-fluid">
         <section className="block-header">
             <div className="row">
               <div className="col-xs-12 col-lg-12 col-md-12 col-sm-12">
@@ -105,37 +106,27 @@ const Dashboard = () => {
             <div className="row">
               <div className="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
                 <Card className="card-style">
+                  <Card.Header>Daily recocovery/effected</Card.Header>
                   <Card.Body className="card-content box-shadow">
-                    <LineChart
-                      width={450}
-                      height={300}
-                      data={dataTo}
-                      margin={{
-                        top: 0,
-                        right: 20,
-                        left: 0,
-                        bottom: 0
-                      }}
-                    >
-                      <CartesianGrid strokeDasharray="3 3" />
-                      <XAxis dataKey="name" />
-                      <YAxis />
-                      <Tooltip />
-                      <Legend />
-                      <Line
-                        type="monotone"
-                        dataKey="pv"
-                        stroke="#8884d8"
-                        activeDot={{ r: 8 }}
-                      />
-                      <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
-                    </LineChart>
+                    <div id="chart">   
+                      <ReactApexChart options={dataTo.options} series={dataTo.series} type="area" height={350} />
+                    </div>
+                  </Card.Body>
+                </Card>
+              </div>
+              <div className="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                <Card className="card-style">
+                  <Card.Header>Daily vaccinated</Card.Header>
+                  <Card.Body className="card-content box-shadow">
+                    <div id="chart">   
+                      <ReactApexChart options={vaccinate.options} series={vaccinate.series} type="bar" height={350} />
+                    </div>
                   </Card.Body>
                 </Card>
               </div>
             </div>
           </section>
-        </Container>
+        </div>
     </div>
   </Fragment>
   )
