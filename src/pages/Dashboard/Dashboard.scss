@@ -55,4 +55,44 @@
             }
         }
     }
+    .section--vaccinate-patient{
+        .card-style{
+            border: 0;
+            border-radius: 5px;
+            margin: 15px 0px;
+           
+        }
+    }
+    .section--activity-board{
+        .card-style{
+            border: 0;
+            border-radius: 5px;
+            margin: 15px 0px;
+            .card-body {
+                flex: 1 1 auto;
+                min-height: 1px;
+                max-height: 400px;
+                overflow: auto;
+                padding: 1.25rem;
+                &::-webkit-scrollbar {
+                    width: 6px;
+                    border-radius: 5px;
+                    padding-right: 10px;
+                  }
+                
+                  /* Handle */
+                  &::-webkit-scrollbar-thumb {
+                    background: #f2f2f2;
+                    border-radius: 10px;
+                    padding-right: 10px;
+                  }
+                
+                  /* Handle on hover */
+                  &::-webkit-scrollbar-thumb:hover {
+                    background: rgba(151, 146, 146, 0.4);
+                  }
+            }
+           
+        }
+    }
 }

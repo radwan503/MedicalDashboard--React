@@ -112,6 +112,26 @@ hr {
 .bg-blue{
   background-color: #000B76 !important;
 }
+.action-btn {
+  height: 35px;
+  width: 35px;
+  margin: 0 5px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: transparent;
+  padding: 3px;
+  color: #fff;
+  &:hover{
+    color: #222;
+    background-color: #ddd;
+  }
+}
+.edit-btn{
+  background-color: #ff944f;
+}
+.delete-btn{
+  background-color: #dc3545;
+}
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .side-panel {

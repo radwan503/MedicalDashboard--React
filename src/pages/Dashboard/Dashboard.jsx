@@ -1,11 +1,20 @@
-import React,{PureComponent,Fragment} from "react";
-import axios from 'axios';
-import { Breadcrumb, Card, Container } from "react-bootstrap";
+import React,{Fragment} from "react";
 import { FaHome,FaFileAlt } from "react-icons/fa";
+
+import { Breadcrumb, Card } from "react-bootstrap";
+import ReactApexChart from "react-apexcharts";
+
+
 import dataTo from '../../data/survey-data.json';
 import vaccinate from '../../data/vaccinated-data.json';
-import ReactApexChart from "react-apexcharts";
+
+import VaccinatePatientList from '../../components/VaccinatePatientListComponents/VaccinatePatientListComponents'
+import DoctorList from "../../components/DoctorListComponents/DoctorListComponents";
+
 import './Dashboard.scss';
+import RecentActivityComponents from "../../components/RecentActivityComponents/RecentActivityComponents";
+import NoticeBoardComponents from "../../components/NoticeBoardComponents/NoticeBoardComponents";
+
 
 
 
@@ -14,7 +23,7 @@ const Dashboard = () => {
   <Fragment>
     <div id="content-dashboard">
       <div className="container-fluid">
-        <section className="block-header">
+          <section className="block-header">
             <div className="row">
               <div className="col-xs-12 col-lg-12 col-md-12 col-sm-12">
                 <Breadcrumb className="breadcrumb-style">
@@ -126,7 +135,59 @@ const Dashboard = () => {
               </div>
             </div>
           </section>
-        </div>
+
+          <section className="section--vaccinate-patient">
+            <div className="row">
+              <div className="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+               <Card className="card-style">
+                 <Card.Header>
+                   Vaccinate Patient List
+                 </Card.Header>
+                 <Card.Body>
+                   <VaccinatePatientList></VaccinatePatientList>
+                 </Card.Body>
+               </Card>
+              </div>
+
+              <div className="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+               <Card className="card-style">
+                 <Card.Header>
+                   Doctor List
+                 </Card.Header>
+                 <Card.Body>
+                    <DoctorList></DoctorList>
+                 </Card.Body>
+               </Card>
+              </div>
+            </div>
+          </section> 
+
+          <section className="section--activity-board">
+            <div className="row">
+                <div className="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                  <Card className="card-style">
+                    <Card.Header>
+                      Recent Activity
+                    </Card.Header>
+                    <Card.Body>
+                      <RecentActivityComponents></RecentActivityComponents>
+                    </Card.Body>
+                  </Card>
+              </div>
+              <div className="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                  <Card className="card-style">
+                    <Card.Header>
+                      Notice Board
+                    </Card.Header>
+                    <Card.Body>
+                      <NoticeBoardComponents></NoticeBoardComponents>
+                    </Card.Body>
+                  </Card>
+              </div>
+            </div>
+          </section>
+
+      </div>
     </div>
   </Fragment>
   )

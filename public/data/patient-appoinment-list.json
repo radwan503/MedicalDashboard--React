@@ -1,0 +1,45 @@
+[
+  { 
+    "id": 1, 
+    "name": "Dr.Jay Soni", 
+    "designation": "mbbs,md",
+    "medicalName":"dhaka medical college",
+    "status":"avaliable"
+  },
+  { 
+    "id": 2, 
+    "name": "Dr.Sarah Smith", 
+    "designation": "bds,mds",
+    "medicalName":"dhaka medical college",
+    "status":"operation"
+  },
+  { 
+    "id": 3, 
+    "name": "Dr.Megha Trivedi", 
+    "designation": "mbbs,md",
+    "medicalName":"dhaka medical college",
+    "status":"leave"
+  },
+  { 
+    "id": 4, 
+    "name": "Dr.John Deo", 
+    "designation": "bhms",
+    "medicalName":"dhaka medical college",
+    "status":"avaliable"
+  },
+  { 
+    "id": 5, 
+    "name": "Dr.Jacob Ryan", 
+    "designation": "mbbs,md",
+    "medicalName":"dhaka medical college",
+    "status":"avaliable"
+  },
+  { 
+    "id": 6, 
+    "name": "Dr.Jay Soni", 
+    "designation": "mbbs",
+    "medicalName":"dhaka medical college",
+    "status":"operation"
+  }
+    
+]
