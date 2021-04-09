@@ -177,7 +177,7 @@ const Dashboard = () => {
               <div className="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
                   <Card className="card-style">
                     <Card.Header>
-                      Notice Board
+                      Notice
                     </Card.Header>
                     <Card.Body>
                       <NoticeBoardComponents></NoticeBoardComponents>
