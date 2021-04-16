@@ -1,0 +1,66 @@
+#content-view-appoinment{
+    margin: 30px 0 0px 0;
+    min-height: calc(100vh - 76px);
+    transition: .5s;
+   .block-header{
+       .breadcrumb{
+           background-color: transparent;
+           color: #222;
+           padding: 0;
+           li:nth-child(1){
+                font-size: 1.6rem;
+                margin: -11px 0;
+                font-weight: 600;
+            }  
+            .breadcrumb-item{
+                a{
+                    color: #6c757d;
+                }
+               &.active {
+                    color: #EE6C4D;
+                }
+            }
+        }
+    }
+    .section--front-liner-appoinment{
+        .card-style{
+            border: 0;
+            border-radius: 5px;
+            margin: 15px 0px;
+           
+        }
+    }
+    .section--vaccinated-appoinment{
+        .card-style{
+            border: 0;
+            border-radius: 5px;
+            margin: 15px 0px;
+           
+        }
+        .vaccinate-appoinment__card{
+            .vaccinate-appoinment__content{
+                .vaccinated-appoinment--header{
+                    .vaccinate-appoinment--search{
+                        .search-btn{
+                            color:#fff;
+                            background-color: #48C9B0;
+                            border-color:#48C9B0 ;
+                            outline: medium none;   
+                        }
+                    }
+                }
+                .vaccinate-appoinment--pagination {
+                    a{
+                        color: #222;
+                    }
+                    .page-item.active .page-link {
+                        z-index: 3;
+                        color: #fff;
+                        background-color: #ee6c4d;
+                        border-color: #ee6c4d;
+                    }
+                }
+            }
+        }
+    }
+}    

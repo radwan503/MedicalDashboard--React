@@ -5,12 +5,12 @@ import { FaHome,FaFileAlt,FaTrash,FaPen } from "react-icons/fa";
 import axios from 'axios';
 
 const DoctorListComponents = () => {
-    const [vaccinatedPeople,setVaccinatePeople] = useState([]);
+  const [vaccinatedPeople,setVaccinatePeople] = useState([]);
   const [loading,setLoading] = useState(true);
   const [error,setError] = useState(null);
 
   const getVaccinatedPeopleList=()=>{
-    fetch('./data/patient-appoinment-list.json')
+    fetch('./data/doctor-list.json')
      .then(response=>{
        if(response.ok){
          return response.json();

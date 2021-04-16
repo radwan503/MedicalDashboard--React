@@ -60,10 +60,10 @@ const Sidebar = () => {
               <Accordion.Collapse eventKey="0">
                 <ul className="sidebar__submenu">
                   <li>
-                    <NavLink to="/dashboard">Enroll</NavLink>
+                    <NavLink to="/view-appoinment">View Appoinment</NavLink>
                   </li>
                   <li>
-                    <NavLink to="/search">Search</NavLink>
+                    <NavLink to="/book-appoinment">Book Appoinment</NavLink>
                   </li>
                 </ul>
               </Accordion.Collapse>

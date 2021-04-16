@@ -1,0 +1,29 @@
+.front-liner__table{
+    .table-content{
+        .table-content__table{
+            .react-bs-table-sizePerPage-dropdown{
+                .btn.btn-default{
+                    color: #fff;
+                    outline: medium none;
+                }
+                a{
+                    color: #ee6c4d;
+                }
+            }
+            .react-bootstrap-table-pagination-list{
+                .pagination{
+                    float: right;
+                    .page-item.active .page-link {
+                        z-index: 3;
+                        color: #fff;
+                        background-color: #ee6c4d;
+                        border-color: #ee6c4d;
+                    }
+                    a{
+                        color: #222;
+                    }
+                }
+            }
+        }
+    }
+}

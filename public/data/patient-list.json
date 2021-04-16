@@ -1,0 +1,45 @@
+[
+  { 
+    "id": 1, 
+    "name": "Airi Satou", 
+    "assignDoctor": "Dr.Jay Soni",
+    "vaccineType":"pfizer",
+    "date":"2020/12/12"
+  },
+  { 
+    "id": 2, 
+    "name": "Ashton Cox", 
+    "assignDoctor": "Dr.Sarah Smith",
+    "vaccineType":"moderna",
+    "date":"2020/06/07"
+  },
+  { 
+    "id": 3, 
+    "name": "Bradley Greer", 
+    "assignDoctor": "Dr.Megha Trivedi",
+    "vaccineType":"astraZeneca",
+    "date":"2020/10/13"
+  },
+  { 
+    "id": 4, 
+    "name": "Brenden Wagner", 
+    "assignDoctor": "Dr.John Deo",
+    "vaccineType":"zymergen",
+    "date":"2020/01/12"
+  },
+  { 
+    "id": 5, 
+    "name": "Brielle Williamson", 
+    "assignDoctor": "Dr.Jacob Ryan",
+    "vaccineType":"glaxoSmithKline",
+    "date":"2020/10/09"
+  },
+  { 
+    "id": 6, 
+    "name": "Bruno Nash", 
+    "assignDoctor": "Dr.Jay Soni",
+    "vaccineType":"atomwise",
+    "date":"2020/11/28"
+  }
+    
+]

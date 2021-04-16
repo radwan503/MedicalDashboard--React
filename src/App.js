@@ -6,6 +6,7 @@ import routes from './routes';
 import Dashboard from './pages/Dashboard/Dashboard';
 import About from './pages/About/About';
 import Header from './components/Header/Header';
+import ViewAppoinment from './pages/Appoinment/ViewAppoinment/ViewApppoinment';
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
             <div className="container-fluid">
               <Switch>
                 <Route path='/' exact component={Dashboard} />
-                <Route path='/about' exact component={About} />
+                <Route path='/view-appoinment' exact component={ViewAppoinment}/>
               </Switch>
             </div>
           </main>
